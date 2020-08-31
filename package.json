@@ -1,19 +1,28 @@
 {
-  "name": "leeb.xyz",
-  "version": "1.0.0",
-  "description": "The repo for my personal website, leeb.xyz. Pro-tip: pronounce the \"lee\" and \"b\" separately!",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bananabrann/leeb.xyz.git"
-  },
-  "author": "Pierson L. Brannan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bananabrann/leeb.xyz/issues"
-  },
-  "homepage": "https://github.com/bananabrann/leeb.xyz#readme"
+    "name": "leeb.xyz",
+    "version": "1.0.0",
+    "description": "The repo for my personal website, leeb.xyz. Pro-tip: pronounce the \"lee\" and \"b\" separately!",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack --mode production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bananabrann/leeb.xyz.git"
+    },
+    "author": "Pierson L. Brannan",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bananabrann/leeb.xyz/issues"
+    },
+    "homepage": "https://github.com/bananabrann/leeb.xyz#readme",
+    "dependencies": {
+        "three": "^0.120.1"
+    },
+    "devDependencies": {
+        "lodash": "^4.17.20",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12"
+    }
 }
