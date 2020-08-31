@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="./reset.css" />
+        <link rel="stylesheet" type="text/css" href="./main.css" />
+        <title>Site of Pierson Brannan - Developer</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1 class="cyan">bananabrann.com</h1>
+                <div class="text-block">
+                    <p>
+                        Hey there, I'm Pierson. A lot know me by
+                        <b class="orange">Lee</b>, but either name is fine. I'm
+                        a <b class="purple">software developer</b>, former U.S.
+                        Marine, and an aquarium lover. Prior to coding, I was a
+                        full-time, professional tuba player for four years.
+                    </p>
+                    <p>
+                        I've worked with a number of coding languages, with the
+                        most familiar ones being JavaScript, SASS/SCSS (CSS),
+                        Python, and Lua.
+                    </p>
+                </div>
+            </section>
+
+            <section id="social-media-links">
+                <row>
+                    <h4 class="red">
+                        <a href="https://www.linkedin.com/in/pbrann/"
+                            >linkedin</a
+                        >
+                    </h4>
+                    <h4 class="cyan">
+                        <a href="https://github.com/bananabrann">github</a>
+                    </h4>
+                    <h4 class="orange">
+                        <!-- prettier-ignore -->
+                        <a href="https://stackoverflow.com/users/11057120/bananabrann?tab=profile">stack overflow</a>
+                    </h4>
+                </row>
+            </section>
+
+            <footer>
+                <p>Pierson L. Brannan | MIT License</p>
+            </footer>
+        </main>
+
+        <script type="x-shader/x-vertex" id="vertexshader">
+            attribute float scale;
+            void main() {
+              vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+              gl_PointSize = scale * ( 300.0 / - mvPosition.z );
+              gl_Position = projectionMatrix * mvPosition;
+            }
+        </script>
+
+        <script type="x-shader/x-fragment" id="fragmentshader">
+            uniform vec3 color;
+            void main() {
+              if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
+              gl_FragColor = vec4( color, 1.0 );
+            }
+        </script>
+        <script type="module" src="bundle.js"></script>
+    </body>
+</html>
