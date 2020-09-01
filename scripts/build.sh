@@ -13,7 +13,7 @@ echo "Clearing dist/ ..."
 rm -rf dist/*
 
 echo "Copying assets..."
-cp -r src/*.css src/*.html dist/
+cp -r src/*.css src/*.html src/res/* dist/
 
 echo "Building webpack..."
 webpack --mode production
