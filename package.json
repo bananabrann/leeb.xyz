@@ -1,6 +1,6 @@
 {
     "name": "leeb.xyz",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "The repo for my personal website, leeb.xyz. Pro-tip: pronounce the \"lee\" and \"b\" separately!",
     "main": "index.js",
     "scripts": {
