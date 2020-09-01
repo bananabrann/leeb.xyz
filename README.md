@@ -1,5 +1,5 @@
 ![Logo of leeb.xyz](/screenshots/title.png?raw=true)
-The repo for my personal website, leeb.xyz. Pro-tip: pronounce the "lee" and "b" separately!
+***
 
 ## How to Run Locally
 ### Requirements
