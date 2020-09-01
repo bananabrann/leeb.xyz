@@ -3,7 +3,7 @@ var THREE = require("three");
 
 // import Stats from "./jsm/libs/stats.module.js";
 
-console.log("sup");
+console.log("Lol I'm telling you there's nothing here...");
 
 var SEPARATION = 100,
     AMOUNTX = 50,
