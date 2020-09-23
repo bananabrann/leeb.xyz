@@ -1,6 +1,6 @@
 ![Logo of leeb.xyz](/screenshots/title.png?raw=true)
 
-![Logo of three.js](/screenshots/threejslogo.jpeg?raw=true)
+![Logo of three.js](/screenshots/logos.png?raw=true)
 
 # How to Run Locally
 This site has been developed using Node.js v8. New versions might work, but it's not tested. 
