@@ -31,3 +31,4 @@ sudo scp -i <path-to-key> \
     ./dist/ \
     <user>@<ip>:/tmp/
 ```
+3. SSH into the VM, and move the dist directory into the www directory.
