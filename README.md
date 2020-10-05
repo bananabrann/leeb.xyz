@@ -1,6 +1,6 @@
 ![Logo of leeb.xyz](/screenshots/title.png?raw=true)
 
-![Logo of three.js](/screenshots/logos.png?raw=true)
+![Website](https://img.shields.io/website?label=leeb&url=https%3A%2F%2Fleeb.xyz) ![Website](https://img.shields.io/website?label=resume&url=https%3A%2F%2Fleeb.xyz%2Fresume.pdf) ![Website](https://img.shields.io/website?label=gtv&url=https%3A%2F%2Fleeb.xyz%2Fgtv) ![Website](https://img.shields.io/website?label=traders%20of%20the%20north&url=https%3A%2F%2Fleeb.xyz%2Ftraders-of-the-north)
 
 # How to Run Locally
 This site has been developed using Node.js v8. New versions might work, but it's not tested. 
