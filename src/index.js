@@ -1,7 +1,9 @@
-// import * as THREE from "three";
 var THREE = require("three");
 
-// import Stats from "./jsm/libs/stats.module.js";
+/* 
+NOTE
+For the most part, this simple 3D effect was taken from the three.js documentation.
+*/
 
 console.log("Lol I'm telling you there's nothing here...");
 
@@ -30,7 +32,7 @@ function init() {
     document.body.appendChild(container);
 
     camera = new THREE.PerspectiveCamera(
-        80, // original value: 75
+        80,
         window.innerWidth / window.innerHeight,
         1,
         10000
@@ -38,8 +40,6 @@ function init() {
     camera.position.z = 1000;
 
     scene = new THREE.Scene();
-
-    //
 
     var numParticles = AMOUNTX * AMOUNTY;
 
@@ -74,12 +74,8 @@ function init() {
         fragmentShader: document.getElementById("fragmentshader").textContent
     });
 
-    //
-
     particles = new THREE.Points(geometry, material);
     scene.add(particles);
-
-    //
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
@@ -89,8 +85,6 @@ function init() {
     document.addEventListener("mousemove", onDocumentMouseMove, false);
     document.addEventListener("touchstart", onDocumentTouchStart, false);
     document.addEventListener("touchmove", onDocumentTouchMove, false);
-
-    //
 
     window.addEventListener("resize", onWindowResize, false);
 }
@@ -105,7 +99,6 @@ function onWindowResize() {
     renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
-//
 
 function onDocumentMouseMove(event) {
     mouseX = event.clientX - windowHalfX;
@@ -130,13 +123,10 @@ function onDocumentTouchMove(event) {
     }
 }
 
-//
-
 function animate() {
     requestAnimationFrame(animate);
 
     render();
-    // stats.update();
 }
 
 function render() {
