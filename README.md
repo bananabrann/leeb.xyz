@@ -16,7 +16,7 @@ git clone git@github.com:bananabrann/leeb.xyz.git \
 ```
 
 2. Execute `npm run-script build`
-3. View `dist/index.htmp` to view the site.
+3. View `dist/index.html` to view the site.
 
 # How to Build and Deploy
 > Note: This is mostly for my own future reference. 
@@ -24,11 +24,4 @@ git clone git@github.com:bananabrann/leeb.xyz.git \
 This site is hosted on a Microsoft Azure Standard B1 virtual machine. To deploy a new version of the site, we build locally then use SCP to move the ./dist/ directory to /var/www/dist/
 
 1. Build project locally: `npm run-script build`. This will call scripts/build.sh, and prep everything needed in ./dist/
-1. SCP the dist/ directory into a directory that *does not require root permissions* e.g., /tmp/ or ~
-```
-sudo scp -i <path-to-key> \
-    -r \
-    ./dist/ \
-    <user>@<ip>:/tmp/
-```
-3. SSH into the VM, and move the dist directory into the www directory.
+1. Use the Azure GUI in your code editor to deploy ./dist/
