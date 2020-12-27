@@ -8,8 +8,8 @@ For the most part, this simple 3D effect was taken from the three.js documentati
 console.log("Lol I'm telling you there's nothing here...");
 
 var SEPARATION = 100,
-    AMOUNTX = 50,
-    AMOUNTY = 50;
+    AMOUNTX = 10,
+    AMOUNTY = 10;
 
 var container;
 var camera, scene, renderer;
@@ -37,7 +37,7 @@ function init() {
         1,
         10000
     );
-    camera.position.z = 1000;
+    camera.position.z = 1500;
 
     scene = new THREE.Scene();
 
