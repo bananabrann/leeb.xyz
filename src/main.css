@@ -4,13 +4,6 @@ body {
     overflow: hidden;
 }
 
-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 main {
     width: 100vw;
     height: 100vh;
@@ -20,10 +13,7 @@ main {
 
 main section {
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 600px;
 }
 
 footer {
@@ -37,12 +27,12 @@ footer {
     margin-bottom: 12px;
 }
 
-#social-media-links row > * {
-    margin: auto 8px;
-}
-
 h1 {
     font-size: calc(10px + 6vmin);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 h3 {
@@ -53,16 +43,18 @@ b {
     font-weight: 700;
 }
 
-.text-block {
-    max-width: 650px;
-}
-.text-block p {
-    padding: 4px 0;
-}
-
 a {
     color: inherit;
-    text-decoration: underline dotted inherit; /* FIXME - Wavy does not work */
+    text-decoration: none;
+}
+
+p, h1, h3, h4 {
+    padding: 3px;
+}
+
+.tabme {
+    margin-left: 20px;
+    /* TODO - Curious, why doesn't `margin: inherit auto inherit 20px` work? */
 }
 
 .black {
@@ -72,17 +64,17 @@ a {
     color: #fdfffc;
 }
 .cyan {
-    color: #2ec4b6;
+    color: #06d6a0;
 }
 .red {
-    color: #e90a24;
+    color: #ef476f;
 }
 .orange {
-    color: #ff9f1c;
-}
-.green {
-    color: #06d6a0;
+    color: #ffd166;
 }
 .purple {
     color: #ff00ea;
+}
+.blue {
+    color: #118ab2;
 }
