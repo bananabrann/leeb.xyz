@@ -1,0 +1,35 @@
+@import "../../styles/colors";
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 600px;
+
+    .my-name {
+        color: $prl;
+        font-weight: 700;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        // @media only screen and (max-width: 545px) {
+        //     flex-direction: column;
+        // }
+    }
+}
+
+.x {
+    color: $ylw;
+}
+
+.y {
+    color: $cyn;
+}
+
+.z {
+    color: $red;
+}
