@@ -27,12 +27,11 @@ const Home: React.FC<any> = (props: any) => {
 
             <div className="content">
                 <div>
-                    <h2>Hi</h2>
                     <p>
-                        My name is <span className="my-name">Lee</span>. I'm a software
-                        developer, former U.S. Marine, and an aquarium lover. My
-                        favorite quote is from Wee Man, "'till the wheels fall
-                        off."
+                        My name is <span className="my-name">Lee</span>. I'm a
+                        software developer, former U.S. Marine, and an aquarium
+                        lover. My favorite quote is from Wee Man, "'till the
+                        wheels fall off."
                     </p>
                     <p>
                         The majority of my career has been as a contractor
@@ -53,9 +52,9 @@ const Home: React.FC<any> = (props: any) => {
                     <br />
 
                     <div className="logo-row">
-                        <i className="fab fa-3x fa-github"></i>
-                        <i className="fab fa-3x fa-linkedin"></i>
-                        <i className="fab fa-3x fa-stack-overflow"></i>
+                        <a href="https://www.linkedin.com/in/pbrann/" target="_blank"><i className="fab fa-2x fa-linkedin"></i></a>
+                        <a href="https://github.com/bananabrann" target="_blank"><i className="fab fa-2x fa-github"></i></a>
+                        <a href="https://stackoverflow.com/users/11057120/bananabrann" target="_blank"><i className="fab fa-2x fa-stack-overflow"></i></a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,9 @@
 @import "./styles/colors";
 
+@mixin base-padding() {
+    padding: 0 10px;
+}
+
 body {
     color: $wht;
     margin: 0;
@@ -21,13 +25,15 @@ a {
 }
 
 p {
-    padding:  0 10px;
+    @include base-padding();
 }
 
 h1, h2, h3, h4, h5, h6 {
+    @include base-padding();
     font-family: 'Ubuntu Mono', sans-serif;
 }
 
 h1 {
-    font-size: calc(10px + 6vmin)
+    font-size: calc(22px + 7vmin);
+    margin-bottom: 8px;
 }
