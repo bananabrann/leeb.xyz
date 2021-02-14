@@ -6,12 +6,15 @@ const Home: React.FC<any> = (props: any) => {
     const [isUnderscoreVisible, setIsUnderscoreVisible] = useState<Boolean>();
 
     useEffect(() => {
-        const underscore: HTMLElement | null = document.getElementById("underscore");
+        const blinkSpeed: number = 800;
+        const underscore: HTMLElement | null = document.getElementById(
+            "underscore"
+        );
 
-        setInterval(function() {
-            underscore!.style.opacity = (underscore!.style.opacity == '0' ? '1' : '0');
-        }, 1000);
-    
+        setInterval(function () {
+            underscore!.style.opacity =
+                underscore!.style.opacity == "0" ? "1" : "0";
+        }, blinkSpeed);
     }, []);
 
     return (
@@ -24,11 +27,12 @@ const Home: React.FC<any> = (props: any) => {
 
             <div className="content">
                 <div>
+                    <h2>Hi</h2>
                     <p>
-                        Hi there, I'm <span className="my-name">Lee</span>. I'm
-                        a software developer, former U.S. Marine, and an
-                        aquarium lover. My favorite quote is from Wee Man,
-                        "'till the wheels fall off."
+                        My name is <span className="my-name">Lee</span>. I'm a software
+                        developer, former U.S. Marine, and an aquarium lover. My
+                        favorite quote is from Wee Man, "'till the wheels fall
+                        off."
                     </p>
                     <p>
                         The majority of my career has been as a contractor
@@ -38,15 +42,20 @@ const Home: React.FC<any> = (props: any) => {
                 </div>
 
                 <div>
-                    <p>Resume</p>
-                    <p>ITIL 4 Foundation in IT Service Management</p>
-                    <p>Microsoft Certified Azure Developer Associate</p>
+                    <h2>View my...</h2>
+                    <a href="./itil4foundation.pdf" target="_blank">
+                        <p>ITIL 4 Foundation in IT Service Management</p>
+                    </a>
+                    <a href="./msazuredevassociate.pdf" target="_blank">
+                        <p>Microsoft Certified Azure Developer Associate</p>
+                    </a>
 
-                    <p>Connect with me on...</p>
+                    <br />
+
                     <div className="logo-row">
-                        <i className="fab fa-github"></i>
-                        <i className="fab fa-linkedin"></i>
-                        <i className="fab fa-stack-overflow"></i>
+                        <i className="fab fa-3x fa-github"></i>
+                        <i className="fab fa-3x fa-linkedin"></i>
+                        <i className="fab fa-3x fa-stack-overflow"></i>
                     </div>
                 </div>
             </div>
