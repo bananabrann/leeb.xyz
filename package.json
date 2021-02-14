@@ -1,28 +1,55 @@
 {
     "name": "leeb.xyz",
-    "version": "1.0.1",
-    "description": "The repo for my personal website, leeb.xyz. Pro-tip: pronounce the \"lee\" and \"b\" separately!",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "bash ./scripts/build.sh"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/bananabrann/leeb.xyz.git"
-    },
-    "author": "Pierson L. Brannan",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/bananabrann/leeb.xyz/issues"
-    },
-    "homepage": "https://github.com/bananabrann/leeb.xyz#readme",
+    "version": "0.1.0",
+    "private": true,
     "dependencies": {
-        "three": "^0.120.1"
+        "@testing-library/jest-dom": "^5.11.9",
+        "@testing-library/react": "^11.2.5",
+        "@testing-library/user-event": "^12.7.1",
+        "@types/jest": "^26.0.20",
+        "@types/node": "^12.20.0",
+        "@types/react": "^17.0.2",
+        "@types/react-dom": "^17.0.1",
+        "node-sass": "^5.0.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.2",
+        "typescript": "^4.1.5",
+        "web-vitals": "^1.1.0"
     },
     "devDependencies": {
-        "lodash": "^4.17.20",
-        "webpack": "^4.44.1",
-        "webpack-cli": "^3.3.12"
+        "@types/react-router-dom": "^5.1.7",
+        "dotenv": "^8.2.0",
+        "serve": "^11.3.2"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "semi": true,
+        "singleQuote": false
     }
 }

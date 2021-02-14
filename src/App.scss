@@ -1,0 +1,39 @@
+@import "./styles/colors";
+
+@mixin base-padding() {
+    padding: 0 10px;
+}
+
+body {
+    color: $wht;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $blk;
+}
+
+code {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    @include base-padding();
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include base-padding();
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+
+h1 {
+    font-size: calc(22px + 7vmin);
+    margin-bottom: 8px;
+}

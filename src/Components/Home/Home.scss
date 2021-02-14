@@ -1,0 +1,48 @@
+@import "../../styles/colors";
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 600px;
+
+    .my-name {
+        color: $prl;
+        font-weight: 700;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        // @media only screen and (max-width: 545px) {
+        //     flex-direction: column;
+        // }
+    }
+
+    a:hover {
+        color: $cyn;
+    }
+
+    .logo-row {
+        display: flex;
+        justify-content: center;
+
+        > * {
+            padding: 0 2vw;
+        }
+    }
+}
+
+.x {
+    color: $ylw;
+}
+
+.y {
+    color: $cyn;
+}
+
+.z {
+    color: $red;
+}
