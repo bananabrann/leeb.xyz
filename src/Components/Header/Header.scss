@@ -1,0 +1,15 @@
+.Header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+
+    .signin {
+        margin: 12px 30px;
+        position: fixed;
+
+        @media only screen and (max-width: 365px) {
+            transform: scale(0.6);
+            margin: 4px;
+        }
+    }
+}

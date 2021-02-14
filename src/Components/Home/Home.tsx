@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import Header from "../Header/Header";
 import "./Home.scss";
 
 const Home: React.FC<any> = (props: any) => {
@@ -19,6 +19,8 @@ const Home: React.FC<any> = (props: any) => {
 
     return (
         <div className="Home">
+            <Header />
+            
             <h1>
                 lee<span id="underscore">_</span>b.<span className="x">x</span>
                 <span className="y">y</span>
