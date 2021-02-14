@@ -1,14 +1,17 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 
 const Header: React.FC<any> = (props: any) => {
     const [isLoginShown, setIsLoginShown] = useState<Boolean>(false);
 
-    return(
+    return (
         <div className="Header">
-            <i className="fas fa-2x fa-sign-in-alt signin"></i>
+            <Link to="/login">
+                <i className="fas fa-2x fa-sign-in-alt signin"></i>
+            </Link>
         </div>
-    )
-}
+    );
+};
 
 export default Header;
