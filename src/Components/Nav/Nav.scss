@@ -1,13 +1,37 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
 .Navbar {
     position: sticky;
     width: 100%;
-    font-size: calc(1.5vmin + 2px);
+    font-size: calc(1.5vmin + 5px);
     color: $blk;
+    background-color: $gry;
 
     .nav {
         display: flex;
         align-items: center;
+
+        p {
+            font-family: "Ubuntu", "sans serif";
+            text-transform: uppercase;
+        }
+
+        > * {
+            @include standard-transitions();
+        }
+
+        > *:hover {
+            @include standard-transitions();
+            // background-color: $ylw;
+        }
+
+        .nav-about:hover {
+            background-color: $ylw;
+        }
+
+        .nav-freelance:hover {
+            background-color: $cyn;
+        }
     }
 }
