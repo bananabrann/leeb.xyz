@@ -21,13 +21,15 @@ const Home: React.FC<any> = () => {
 
     return (
         <div className="Home">
-            <Header />
+            <br />
 
             <h1>
                 lee<span id="underscore">_</span>b.<span className="x">x</span>
                 <span className="y">y</span>
                 <span className="z">z</span>
             </h1>
+
+            <Header />
 
             <div className="content">
                 <div>
@@ -52,6 +54,29 @@ const Home: React.FC<any> = () => {
                     <a href="./msazuredevassociate.pdf" target="_blank">
                         <p>Microsoft Certified Azure Developer Associate</p>
                     </a>
+                </div>
+
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    a dignissim sapien. Proin convallis tellus et ipsum
+                    accumsan, quis malesuada leo efficitur. Phasellus ac lectus
+                    nunc. In rutrum sem vitae leo vehicula euismod. Sed pharetra
+                    lorem dolor. In dictum risus molestie eros malesuada
+                    suscipit. Nam quis neque nec magna elementum molestie.
+                    Nullam posuere diam dictum est lacinia, at viverra diam
+                    varius. Integer ac molestie sem. Fusce pretium porta tortor,
+                    sit amet sagittis metus tempus id. Etiam volutpat, orci
+                    vitae faucibus lacinia, tellus velit pulvinar leo, eget
+                    luctus eros est a magna. Sed ac auctor dui. Quisque placerat
+                    convallis ligula, vitae feugiat mauris facilisis eget.
+                    Praesent nec tortor ac lorem pharetra molestie ut ac enim.
+                    Quisque accumsan massa at lacus feugiat congue. Phasellus
+                    nisi magna, maximus non dui ac, porta placerat odio. Fusce
+                    ac ornare diam. Donec ac augue at metus mattis fringilla a
+                    non augue. Proin vitae arcu diam. Ut hendrerit at elit nec
+                    blandit. Proin elementum, metus at consequat viverra, erat
+                    metus mattis sem, sollicitudin ultrices nulla risus vel
+                    erat. Nulla ac ante sed nibh gravida ultrices.
                 </div>
             </div>
 

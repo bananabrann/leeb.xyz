@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     width: 100vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 
     .nav {
         display: flex;
