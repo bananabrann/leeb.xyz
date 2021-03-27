@@ -1,0 +1,16 @@
+@import "../../styles/colors";
+
+#footer {
+    background-color: $dbl;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 8px 4px 8px;
+
+    .legal {
+        justify-content: center;
+        font-size: 10px;
+        display: flex;
+        padding: 0;
+    }
+}

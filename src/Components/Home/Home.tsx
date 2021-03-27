@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "./Home.scss";
 
@@ -46,33 +47,10 @@ const Home: React.FC<any> = (props: any) => {
                         <p>Microsoft Certified Azure Developer Associate</p>
                     </a>
 
-                    <br />
-
-                    <div className="logo-row">
-                        <a
-                            href="https://www.linkedin.com/in/pbrann/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <i className="fab fa-2x fa-linkedin"></i>
-                        </a>
-                        <a
-                            href="https://github.com/bananabrann"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <i className="fab fa-2x fa-github"></i>
-                        </a>
-                        <a
-                            href="https://stackoverflow.com/users/11057120/bananabrann"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <i className="fab fa-2x fa-stack-overflow"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
+
+            <Footer />
         </div>
     );
 };
