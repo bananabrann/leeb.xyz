@@ -1,10 +1,7 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 
 const Header: React.FC<any> = (props: any) => {
-    const [isLoginShown, setIsLoginShown] = useState<Boolean>(false);
-
     return (
         <div className="Header">
             <Link to="/login">

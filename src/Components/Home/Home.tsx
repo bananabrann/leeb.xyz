@@ -3,8 +3,6 @@ import Header from "../Header/Header";
 import "./Home.scss";
 
 const Home: React.FC<any> = (props: any) => {
-    const [isUnderscoreVisible, setIsUnderscoreVisible] = useState<Boolean>();
-
     useEffect(() => {
         const blinkSpeed: number = 800;
         const underscore: HTMLElement | null = document.getElementById(
@@ -12,15 +10,15 @@ const Home: React.FC<any> = (props: any) => {
         );
 
         setInterval(function () {
-            underscore!.style.opacity =
-                underscore!.style.opacity == "0" ? "1" : "0";
+            // prettier-ignore
+            underscore!.style.opacity = underscore!.style.opacity == "0" ? "1" : "0";
         }, blinkSpeed);
     }, []);
 
     return (
         <div className="Home">
             <Header />
-            
+
             <h1>
                 lee<span id="underscore">_</span>b.<span className="x">x</span>
                 <span className="y">y</span>
@@ -54,9 +52,27 @@ const Home: React.FC<any> = (props: any) => {
                     <br />
 
                     <div className="logo-row">
-                        <a href="https://www.linkedin.com/in/pbrann/" target="_blank"><i className="fab fa-2x fa-linkedin"></i></a>
-                        <a href="https://github.com/bananabrann" target="_blank"><i className="fab fa-2x fa-github"></i></a>
-                        <a href="https://stackoverflow.com/users/11057120/bananabrann" target="_blank"><i className="fab fa-2x fa-stack-overflow"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/pbrann/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <i className="fab fa-2x fa-linkedin"></i>
+                        </a>
+                        <a
+                            href="https://github.com/bananabrann"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <i className="fab fa-2x fa-github"></i>
+                        </a>
+                        <a
+                            href="https://stackoverflow.com/users/11057120/bananabrann"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <i className="fab fa-2x fa-stack-overflow"></i>
+                        </a>
                     </div>
                 </div>
             </div>
