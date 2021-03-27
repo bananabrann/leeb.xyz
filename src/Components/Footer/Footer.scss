@@ -1,6 +1,11 @@
 @import "../../styles/colors";
 
 #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     -webkit-box-shadow: 0px -10px 6px 5px $wht; 
     box-shadow: 0px -7px 10px 5px $wht;
     background-color: $blk;
@@ -9,10 +14,31 @@
     bottom: 0;
     color: $wht;
     width: 100%;
+    font-size: 14px;
+
+    .main-footer-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 700px;
+        padding: 10px;
+    }
+
+    p {
+        margin: inherit;
+    }
 
     .logo-row {
+        margin: 9px auto;
+        display: flex;
+        justify-content: center;
+
         a:hover {
             color: $cyn;
+        }
+        
+        > * {
+            margin: 3px 6px;
         }
     }
 

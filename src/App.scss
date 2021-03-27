@@ -26,14 +26,9 @@ a {
 
 p {
     @include base-padding();
+    font-family: 'Lora', serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    @include base-padding();
-    font-family: 'Ubuntu Mono', sans-serif;
-}
-
-h1 {
-    font-size: calc(22px + 7vmin);
-    margin: 0;
+.logo {
+    font-weight: 700;
 }

@@ -1,22 +1,13 @@
+@import "../../styles/colors";
+
 .Navbar {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    width: 100%;
+    font-size: calc(1.5vmin + 2px);
+    color: $blk;
 
     .nav {
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
-
-    // .signin {
-    //     margin: 12px 30px;
-
-    //     @media only screen and (max-width: 365px) {
-    //         transform: scale(0.6);
-    //         margin: 4px;
-    //     }
-    // }
 }
