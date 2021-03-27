@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "./Header.scss";
+import "./Nav.scss";
 
-const Header: React.FC<any> = (props: any) => {
+const Nav: React.FC<any> = (props: any) => {
     return (
-        <div className="Header">
+        <div className="Navbar">
             <div className="nav">
                 <p>Homepage</p>
                 <p>About Me</p>
@@ -20,4 +20,4 @@ const Header: React.FC<any> = (props: any) => {
     );
 };
 
-export default Header;
+export default Nav;

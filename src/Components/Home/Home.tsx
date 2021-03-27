@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+import Nav from "../Nav/Nav";
 import "./Home.scss";
 
 const Home: React.FC<any> = () => {
@@ -13,7 +13,7 @@ const Home: React.FC<any> = () => {
         const underscore: HTMLElement | null = document.getElementById("underscore"); // prettier-ignore
 
         setInterval(function () {
-            underscore!.style.opacity = underscore!.style.opacity == "0" ? "1" : "0"; // prettier-ignore
+            underscore!.style.opacity = underscore!.style.opacity === "0" ? "1" : "0"; // prettier-ignore
         }, blinkSpeed);
 
         // ---
@@ -29,7 +29,7 @@ const Home: React.FC<any> = () => {
                 <span className="z">z</span>
             </h1>
 
-            <Header />
+            <Nav />
 
             <div className="content">
                 <div>

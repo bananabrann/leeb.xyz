@@ -4,8 +4,6 @@ import "./Footer.scss";
 const Footer: React.FC<any> = () => {
     return (
         <div id="footer">
-
-
             <div className="logo-row">
                 <a
                     href="https://www.linkedin.com/in/pbrann/"
@@ -31,7 +29,7 @@ const Footer: React.FC<any> = () => {
             </div>
 
             <div className="legal">
-                <p>leeb.xyz MIT license. All logos have their respective license.</p>
+                <p>leeb.xyz MIT license.</p>
             </div>
         </div>
     );

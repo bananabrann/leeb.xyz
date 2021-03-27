@@ -5,14 +5,14 @@
 }
 
 body {
-    color: $wht;
+    color: $blk;
     margin: 0;
     display: flex;
     justify-content: center;
     font-family: 'Ubuntu', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: $blk;
+    background-color: $wht;
 }
 
 code {
