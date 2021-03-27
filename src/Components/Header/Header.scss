@@ -1,14 +1,19 @@
 .Header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100vw;
 
-    .signin {
-        margin: 12px 30px;
-
-        @media only screen and (max-width: 365px) {
-            transform: scale(0.6);
-            margin: 4px;
-        }
+    .nav {
+        display: flex;
+        justify-content: center;
     }
+
+    // .signin {
+    //     margin: 12px 30px;
+
+    //     @media only screen and (max-width: 365px) {
+    //         transform: scale(0.6);
+    //         margin: 4px;
+    //     }
+    // }
 }

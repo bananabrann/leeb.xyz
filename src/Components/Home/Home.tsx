@@ -5,13 +5,10 @@ import "./Home.scss";
 const Home: React.FC<any> = (props: any) => {
     useEffect(() => {
         const blinkSpeed: number = 800;
-        const underscore: HTMLElement | null = document.getElementById(
-            "underscore"
-        );
+        const underscore: HTMLElement | null = document.getElementById("underscore"); // prettier-ignore
 
         setInterval(function () {
-            // prettier-ignore
-            underscore!.style.opacity = underscore!.style.opacity == "0" ? "1" : "0";
+            underscore!.style.opacity = underscore!.style.opacity == "0" ? "1" : "0"; // prettier-ignore
         }, blinkSpeed);
     }, []);
 
