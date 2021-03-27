@@ -3,14 +3,20 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "./Home.scss";
 
-const Home: React.FC<any> = (props: any) => {
+const Home: React.FC<any> = () => {
     useEffect(() => {
+        /*
+            TODO --
+            Refactor to remove the underscore freaking out on page resizing. Use state and effects.
+        */
         const blinkSpeed: number = 800;
         const underscore: HTMLElement | null = document.getElementById("underscore"); // prettier-ignore
 
         setInterval(function () {
             underscore!.style.opacity = underscore!.style.opacity == "0" ? "1" : "0"; // prettier-ignore
         }, blinkSpeed);
+
+        // ---
     }, []);
 
     return (
@@ -46,7 +52,6 @@ const Home: React.FC<any> = (props: any) => {
                     <a href="./msazuredevassociate.pdf" target="_blank">
                         <p>Microsoft Certified Azure Developer Associate</p>
                     </a>
-
                 </div>
             </div>
 
