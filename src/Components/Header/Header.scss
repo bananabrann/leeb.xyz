@@ -1,7 +1,7 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
-$tilt-degree: -2deg;
+$tilt-degree: -3deg;
 
 .Header {
     width: 100%;
@@ -13,7 +13,7 @@ $tilt-degree: -2deg;
         background-color: $blk;
         position: fixed;
         content: " ";
-        display:block;
+        display: block;
         width: 110%;
         height: 135px;
         top: -50px;
@@ -22,6 +22,18 @@ $tilt-degree: -2deg;
 
     .header-content {
         position: relative;
+        padding: 8px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        > * {
+            margin: auto 9px;
+        }
     }
 
+    .Logo {
+        font-size: calc(3vmin + 14px);
+    }
 }

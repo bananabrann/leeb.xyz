@@ -5,3 +5,8 @@
     transition-delay: 0;
     transition-timing-function: ease-in-out;
 }
+
+@mixin logo-styling() {
+    font-size: calc(5vmin + 20px);
+    color: $wht;
+}

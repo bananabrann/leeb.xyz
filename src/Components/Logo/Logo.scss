@@ -1,0 +1,19 @@
+@import "../../styles/colors";
+
+.Logo {
+    font-family: "Ubuntu", "sans serif";
+    font-weight: 700;
+
+    .x {
+        color: $ylw;
+    }
+    
+    .y {
+        color: $cyn;
+    }
+    
+    .z {
+        color: $red;
+    }
+
+}
