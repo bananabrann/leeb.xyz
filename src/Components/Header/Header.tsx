@@ -8,7 +8,10 @@ const Header: React.FC<any> = () => {
     return (
         <div className="Header">
             <div className="header-content">
-                <Logo />
+                <div className="badge">
+                    <Logo />
+                    <p className="subtitle">Software Engineer</p>
+                </div>
 
                 <NavItem
                     destination="/about"
@@ -17,7 +20,7 @@ const Header: React.FC<any> = () => {
                     navItemIdentifier="navitem-about"
                 />
 
-                <NavItem 
+                <NavItem
                     destination="/freelance"
                     label="Freelance Services"
                     isDisabled={false}

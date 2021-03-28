@@ -20,16 +20,32 @@ $tilt-degree: -3deg;
         left: -5%;
     }
 
+    
     .header-content {
         position: relative;
         padding: 8px;
-
+        
         display: flex;
         flex-direction: row;
         align-items: center;
-
+        
         > * {
             margin: auto 9px;
+        }
+
+        .badge {
+            // background-color: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .subtitle {
+                font-family: "Ubuntu", "serif";
+                margin: 4px auto;
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 4px;                
+            }
         }
     }
 
