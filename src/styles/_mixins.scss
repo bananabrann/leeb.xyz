@@ -1,5 +1,13 @@
 @import "./colors";
 
+// This mixin does not provide any magic. It's purely for convenience.
+@mixin flex($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 @mixin standard-transitions() {
     transition-duration: 225ms;
     transition-delay: 0;

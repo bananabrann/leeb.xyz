@@ -1,0 +1,22 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.About {
+    @include flex();
+
+    .content {
+        max-width: 1200px;
+        display: flex;
+    }
+    
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .me-jpeg {
+        width: 20%;
+        border-radius: 50%;
+    }
+}

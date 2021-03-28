@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import About from "./Components/About/About";
 import Freelance from "./Components/Freelance/Freelance";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
@@ -21,14 +22,23 @@ function App() {
                     exact
                     path="/login"
                     render={() => {
-                        return <Login />
+                        return <Login />;
                     }}
                 />
 
-                <Route 
-                    exact path="/freelance"
+                <Route
+                    exact
+                    path="/freelance"
                     render={() => {
-                        return <Freelance />
+                        return <Freelance />;
+                    }}
+                />
+
+                <Route
+                    exact
+                    path="/about"
+                    render={() => {
+                        return <About />;
                     }}
                 />
             </Router>
