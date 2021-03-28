@@ -1,32 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../Footer/Footer";
-import Nav from "../Nav/Nav";
 import Header from "../Header/Header";
 import "./Home.scss";
 
 const Home: React.FC<any> = () => {
-    // useEffect(() => {
-    //     const blinkSpeed: number = 800;
-    //     const underscore: HTMLElement | null = document.getElementById("underscore"); // prettier-ignore
-
-    //     setInterval(function () {
-    //         underscore!.style.opacity = underscore!.style.opacity === "0" ? "1" : "0"; // prettier-ignore
-    //     }, blinkSpeed);
-    // }, []);
-
     return (
         <div className="Home">
-            {/* <div className="header">
-                <div className="logo">
-                    lee<span id="underscore">_</span>b.
-                    <span className="x">x</span>
-                    <span className="y">y</span>
-                    <span className="z">z</span>
-                </div>
-            </div> */}
-
-            {/* <Nav /> */}
-
             <Header />
 
             <div className="content">
