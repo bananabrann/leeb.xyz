@@ -1,0 +1,7 @@
+@import "./colors";
+
+@mixin standard-transitions() {
+    transition-duration: 225ms;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}

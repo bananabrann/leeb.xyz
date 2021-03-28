@@ -1,0 +1,27 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+$tilt-degree: -2deg;
+
+.Header {
+    width: 100%;
+    color: $wht;
+    margin-bottom: 8vh;
+
+    &::before {
+        transform: rotate($tilt-degree);
+        background-color: $blk;
+        position: fixed;
+        content: " ";
+        display:block;
+        width: 110%;
+        height: 135px;
+        top: -50px;
+        left: -5%;
+    }
+
+    .header-content {
+        position: relative;
+    }
+
+}
