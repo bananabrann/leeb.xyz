@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import Separator from "../Separator/Separator";
 import "./Home.scss";
 
 const Home: React.FC<any> = () => {
@@ -25,6 +26,8 @@ const Home: React.FC<any> = () => {
                         team and solo.
                     </p>
                 </div>
+
+                <Separator />
 
                 <div>
                     <a href="./itil4foundation.pdf" target="_blank">

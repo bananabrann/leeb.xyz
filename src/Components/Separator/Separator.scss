@@ -1,0 +1,14 @@
+@import "../../styles/colors";
+
+.Separator {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+
+    div {
+        background-color: $gry;
+        height: 2px;
+        width: 75vw;
+    }
+}

@@ -5,16 +5,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    // max-width: 600px;
-
-    .header {
-        background-color: $blk;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 12vmin;
-    }
 
     .my-name {
         color: $prl;
@@ -24,54 +14,5 @@
     .content {
         display: flex;
         flex-direction: column;
-
-        // @media only screen and (max-width: 545px) {
-        //     flex-direction: column;
-        // }
     }
-
-    .logo {
-        font-size: calc(5vmin + 20px);
-        color: $wht;
-    }
-
-
-    // .services-row {
-    //     width: 100%;
-    //     margin: 12px;
-    //     display: flex;
-    //     justify-content: center;
-
-    //     p {
-    //         margin: inherit;
-    //     }
-
-    //     i {
-    //         // height: 100px;
-    //     }
-
-    //     .service-card {
-    //         display: flex;
-    //         padding: 3px 10px;
-    //         border: 2px solid $gry;
-    //         border-radius: 19px;
-    //         background-color: $gry;
-    //         max-width: 285px;
-
-    //         .right {
-    //             display: flex;
-    //             flex-direction: column;
-                
-    //             .upper {
-    //                 font-size: 24px;
-    //                 font-weight: 700;
-    //             }
-
-    //             .lower {
-    //                 font-size: 14px;
-    //                 font-weight: 400;
-    //             }
-    //         }
-        // }
-    // }
 }

@@ -1,8 +1,16 @@
 import React from "react";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
+import "./Freelance.scss";
 
 const Freelance: React.FC<any> = () => {
     return (
         <div className="Freelance">
+            <Header />
+
+            <div className="content">
+            </div>
+
             <div className="services-row">
                 <div className="service-card">
                     <div className="left">
@@ -60,6 +68,8 @@ const Freelance: React.FC<any> = () => {
                     {/* <i class="fas fa-globe"></i> */}
                 </div>
             </div>
+
+            <Footer />
         </div>
     );
 };

@@ -9,6 +9,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: $wht;
+
 }
 
 code {
@@ -27,4 +28,8 @@ p {
 
 .logo {
     font-weight: 700;
+}
+
+.App {
+    width: 100vw;
 }
