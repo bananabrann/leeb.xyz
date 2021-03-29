@@ -35,8 +35,8 @@ const About: React.FC<any> = () => {
                     downloadDestination="./itil4foundation.pdf"
                 />
                 <InfoCard
-                    title="Navy Achievement Medal"
-                    body="For dedicated service with outstanding product and initiative."
+                    title="Military Awards"
+                    body="A proven history of a strong work ethic and enthusiastic initiative. While on active duty in the U.S. Marines, received several personal awards and medals as well as unit commendations."
                     icon="fas fa-medal"
                 />
 
