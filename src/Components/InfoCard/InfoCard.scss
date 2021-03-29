@@ -28,7 +28,15 @@
         padding: 20px;
         background-color: $gry;
         border-radius: 20px;
-        
+
+        .info-card-upper {
+            @include flex(row, space-between, flex-start);
+
+            i {
+                color: $gry2;
+            }
+        }
+
         .title {
             font-family: "Ubuntu", "sans serif";
             font-weight: 700;

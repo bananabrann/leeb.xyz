@@ -25,12 +25,14 @@ const About: React.FC<any> = () => {
                     title="Microsoft Certified Azure Developer"
                     body="Certified knowledge and technical ability in software development on Microsoft Azure. Certification number H542-9229."
                     icon="fas fa-check"
+                    downloadDestination="./msazuredevassociate.pdf"
                 />
 
                 <InfoCard
                     title="ITIL Foundation in IT Service Manangement"
                     body=""
                     icon="fa fa-check"
+                    downloadDestination="./itil4foundation.pdf"
                 />
                 <InfoCard
                     title="Navy Achievement Medal"

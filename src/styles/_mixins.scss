@@ -1,9 +1,9 @@
 @import "./colors";
 
-// This mixin does not provide any magic. It's purely for convenience.
+// This mixin does not provide any magic. It's purely for typing convenience.
 @mixin flex($direction: column, $justify: center, $align: center) {
     display: flex;
-    flex-direction: column;
+    flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
 }
