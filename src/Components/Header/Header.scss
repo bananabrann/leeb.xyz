@@ -11,7 +11,7 @@ $tilt-degree: -3deg;
     &::before {
         transform: rotate($tilt-degree);
         background-color: $blk;
-        position: fixed;
+        position: relative;
         content: " ";
         display: block;
         width: 110%;
@@ -22,7 +22,8 @@ $tilt-degree: -3deg;
 
     
     .header-content {
-        position: relative;
+        position: absolute;
+        top: 0;
         padding: 8px;
         
         display: flex;
