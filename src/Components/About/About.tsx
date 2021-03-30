@@ -7,14 +7,14 @@ import "./About.scss";
 
 const About: React.FC<any> = () => {
     return (
-        <div className="About">
+        <div className="About page">
             <Header />
 
-            <div className="content bio">
+            <div className="content bio content-wrap">
                 <img src={MeJPEG} className="me-jpeg" alt="" />
             </div>
 
-            <div className="content skills">
+            <div className="content skills content-wrap">
                 {/* <InfoCard
                     title="Full-Time Professional"
                     body="I'm a full-time, professional web developer working on large, enterprise applications."

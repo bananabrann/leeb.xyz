@@ -6,12 +6,12 @@ import "./Freelance.scss";
 
 const Freelance: React.FC<any> = () => {
     return (
-        <div className="Freelance">
+        <div className="Freelance page">
             <Header />
 
             <div className="content"></div>
 
-            <div className="wide-content">
+            <div className="wide-content content-wrap">
                 <FaqItem
                     question="What technologies do you use?"
                     answer="I have experience in everything from React and TypeScript to C# and Java. However, it doesn't matter. I've learned through my experience is that it doesn't really matter what I already know --what tech stack we choose to use entirely depends on your project and needs."

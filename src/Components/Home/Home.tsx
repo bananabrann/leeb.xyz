@@ -6,10 +6,10 @@ import "./Home.scss";
 
 const Home: React.FC<any> = () => {
     return (
-        <div className="Home">
+        <div className="Home page">
             <Header />
 
-            <div className="content">
+            <div className="content content-wrap">
                 <div>
                     <p>
                         My name is <span className="my-name">Lee</span>. I'm a
