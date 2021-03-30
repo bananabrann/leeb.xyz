@@ -1,4 +1,5 @@
 import React from "react";
+import FaqItem from "./FaqItem/FaqItem";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "./Freelance.scss";
@@ -8,65 +9,20 @@ const Freelance: React.FC<any> = () => {
         <div className="Freelance">
             <Header />
 
-            <div className="content">
-            </div>
+            <div className="content"></div>
 
-            <div className="services-row">
-                <div className="service-card">
-                    <div className="left">
-                        <i className="fas fa-globe fa-3x"></i>
-                    </div>
+            <div className="wide-content">
+                <FaqItem
+                    question="What technologies do you use?"
+                    answer="I have experience in everything from React and TypeScript to C# and Java. However, it doesn't matter. I've learned through my experience is that it doesn't really matter what I already know --what tech stack we choose to use entirely depends on your project and needs."
+                />
 
-                    <div className="right">
-                        <div className="upper">
-                            <p>Web Development</p>
-                        </div>
-
-                        <div className="lower">
-                            <p>Websites, web applications.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="service-card">
-                    <div className="left">
-                        <i className="fas fa-cogs fa-3x"></i>
-                    </div>
-
-                    <div className="right">
-                        <div className="upper">
-                            <p>Automation</p>
-                        </div>
-
-                        <div className="lower">
-                            <p>
-                                Automating Excel workflows, database migrations,
-                                and more.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="service-card">
-                    <div className="left">
-                        <i className="fas fa-id-badge fa-3x"></i>
-                    </div>
-
-                    <div className="right">
-                        <div className="upper">
-                            <p>Enterprise Applications</p>
-                        </div>
-
-                        <div className="lower">
-                            <p>
-                                Large, enterprise projects and 1099 individual
-                                contracting.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* <i class="fas fa-globe"></i> */}
-                </div>
+                <FaqItem
+                    question="How much do you charge?"
+                    answer="I do not charge hourly; I charge by the project. I cannot give you an honest estimate to a solution without understanding your problem. The price is drastically effected by what your needs are. A business user looking to automate their Excel worksheets might be $100, while a complex, enterprise eCommerce website might be several thousand. Let's talk about what your specific needs are."
+                    readMoreTitle="But what about IT support and 1099 indepent, enterprise contractors?"
+                    readMoreBody="I do not offer IT support as a service. If you have problems or questions with a product I provided to you, that's free of charge. If you're a recruiter or other person who is looking for a temporary hourly developer for their product team, please reach out for me for rate negotiation."
+                />
             </div>
 
             <Footer />

@@ -8,6 +8,10 @@
     align-items: $align;
 }
 
+@mixin standard-dynamic-text-sizing($base: 16px) {
+    font-size: calc(16px + 0.175vw);
+}
+
 @mixin standard-transitions() {
     transition-duration: 225ms;
     transition-delay: 0;

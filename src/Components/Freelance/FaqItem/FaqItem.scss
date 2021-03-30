@@ -1,0 +1,26 @@
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+
+.FaqItem {
+    .question-container {
+        @include flex(column, center, flex-end);
+        font-size: calc( 2vw + 8px);
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .answer-container {
+        @include standard-dynamic-text-sizing();
+    }
+
+    .readmore-container {
+        @include standard-dynamic-text-sizing();
+
+        .readmore-title {
+            @include flex();
+            color: $red;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
