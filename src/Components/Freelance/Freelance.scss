@@ -1,3 +1,8 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+$tilt-degree: 2deg;
+
 .Freelance {
     display: flex;
     flex-direction: column;
@@ -6,10 +11,30 @@
     .content {
         width: 80vw;
         max-width: 800px;
+
+        p {
+            @include standard-dynamic-text-sizing();
+        }
     }
 
     .wide-content {
         width: 90vw;
         max-width: 1045px;
+    }
+
+    .faq-banner {
+        @include flex(row);
+        @include standard-dynamic-text-heading-sizing();
+        font-weight: 700;
+        background-color: $gry;
+        width: 100vw;
+        height: 90px;
+        margin: 10px auto 25px;
+
+        transform: rotate($tilt-degree);
+
+        * {
+            transform: rotate(-$tilt-degree);
+        }
     }
 }

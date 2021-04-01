@@ -1,17 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import FaqItem from "./FaqItem/FaqItem";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import ServiceItem from "./ServiceItem/ServiceItem";
 import "./Freelance.scss";
+
+interface IService {
+    title: string;
+    body: string;
+}
 
 const Freelance: React.FC<any> = () => {
     return (
         <div className="Freelance page">
             <Header />
 
-            <div className="content"></div>
+            <div className="content">
+                <p>
+                    It's not my job to impress you with technical jargon; I
+                    firmly believe that the most value is added when things make
+                    the most sense to you.
+                </p>
+            </div>
+
+            <div className="services content">
+                <div className="selection-area">
+                    <ServiceItem content="Web Development" />
+                    <ServiceItem content="Discord Bots" />
+
+                </div>
+
+                <div className="descriptor">
+
+                </div>
+
+            </div>
+
+            <div className="faq-banner">
+                {/* <i className="fas fa-comment-dots"></i> */}
+                {/* <span>Common Questions</span> */}
+            </div>
 
             <div className="wide-content content-wrap">
+
                 <FaqItem
                     question="What technologies do you use?"
                     answer="I have experience in a lot of things ranging from React and TypeScript to Python and Java. However, I've learned through my experience that it doesn't really matter. What tech stack we choose is entirely dependent on your project and needs."

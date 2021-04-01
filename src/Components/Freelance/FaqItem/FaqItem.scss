@@ -4,7 +4,7 @@
 .FaqItem {
     .question-container {
         @include flex(column, center, flex-end);
-        font-size: calc( 2vw + 8px);
+        @include standard-dynamic-text-heading-sizing();
         font-weight: 700;
         font-style: italic;
     }

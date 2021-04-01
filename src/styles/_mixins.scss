@@ -12,6 +12,10 @@
     font-size: calc(16px + 0.175vw);
 }
 
+@mixin standard-dynamic-text-heading-sizing() {
+    font-size: calc( 2vw + 8px);
+}
+
 @mixin standard-transitions() {
     transition-duration: 225ms;
     transition-delay: 0;

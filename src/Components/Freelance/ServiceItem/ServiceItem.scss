@@ -1,0 +1,18 @@
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+
+.ServiceItem {
+    @include flex(row);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    
+    p {
+       font-family: "Ubuntu", "sans serif";
+        @include standard-dynamic-text-sizing();
+    }
+
+    i {
+        // color: $gry;
+    }
+}
