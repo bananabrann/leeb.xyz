@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FaqItem from "./FaqItem/FaqItem";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -6,41 +6,47 @@ import ServiceItem from "./ServiceItem/ServiceItem";
 import "./Freelance.scss";
 
 const Freelance: React.FC<any> = () => {
+    enum Services {
+        WebDev,
+        Automation,
+    }
+
+    const [isWebDevBlockVisible, setIsWebDevBlockVisible] = useState<boolean>(false); // prettier-ignore
+
+    useEffect(() => {
+        // FIXME -- Needs better type checking. Why "null"?
+        const effectElement: HTMLElement | null = document.getElementById("webdev-effect-block"); // prettier-ignore
+        const bodyElement: HTMLElement | null = document.getElementById("webdev-body"); // prettier-ignore
+
+        if (isWebDevBlockVisible) {
+            console.log("Style on");
+        } else {
+            console.log("Style off");
+        }
+    }, [isWebDevBlockVisible]);
+
     return (
         <div className="Freelance page">
             <Header />
 
-            <div className="content">
-                <p>
-                    It's not my job to impress you with technical jargon; I
-                    firmly believe that the most value is added when things make
-                    the most sense to you.
-                </p>
+            <div className="service-item">
+                <div className="title service-webdev">Web Development</div>
+                <div
+                    id="webdev-body"
+                    className="body"
+                    onMouseEnter={() => setIsWebDevBlockVisible(true)}
+                    onMouseLeave={() => setIsWebDevBlockVisible(false)}
+                >
+                    <div
+                        id="webdev-effect-block"
+                        className="service-effect-block color-block"
+                    />
+                </div>
             </div>
 
-            <div className="services content">
-                <ServiceItem
-                    title="Web Development"
-                    body="Websites, web apps"
-                    icon="fas fa-globe"
-                />
-                <ServiceItem
-                    title="Automation"
-                    body="Data entry, business workflows"
-                    icon="fas fa-cogs"
-                />
-                <ServiceItem
-                    title="Discord Bots"
-                    body="Chat bots, levels, role management"
-                    icon="fab fa-discord"
-                />
-        
-            </div>
-
-            <div className="faq-banner">
-                {/* <i className="fas fa-comment-dots"></i> */}
-                {/* <span>Common Questions</span> */}
-            </div>
+            <br />
+            <br />
+            <br />
 
             <div className="wide-content content-wrap">
                 <FaqItem

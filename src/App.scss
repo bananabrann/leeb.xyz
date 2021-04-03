@@ -1,4 +1,5 @@
 @import "./styles/colors";
+@import "./styles/mixins";
 
 body {
     color: $blk;
@@ -22,16 +23,7 @@ a {
 }
 
 p {
-    padding: inherit 4px;
     font-family: 'Lora', serif;
-}
-
-.logo {
-    font-weight: 700;
-}
-
-.App {
-    width: 100vw;
 }
 
 .page {
@@ -40,5 +32,5 @@ p {
 }
 
 .content-wrap {
-    padding-bottom: 160px;      // footer height
+    padding-bottom: $footer-height;
 }

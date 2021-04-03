@@ -1,28 +1,39 @@
 @import "./colors";
 
-// This mixin does not provide any magic. It's purely for typing convenience.
+// SECTION - Variables
+
+$footer-height: 168px;
+
+
+
+// SECTION - Mixins
+
 @mixin flex($direction: column, $justify: center, $align: center) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+    // This mixin does not provide any magic. It's purely for typing convenience.
+    display         : flex;
+    justify-content : $justify;
+    flex-direction  : $direction;
+    align-items     : $align;
 }
 
 @mixin standard-dynamic-text-sizing($base: 16px) {
-    font-size: calc(16px + 0.175vw);
+    font-size       : calc(16px + 0.175vw);
+    padding         : 2px;
+    margin          : 3px;
 }
 
 @mixin standard-dynamic-text-heading-sizing() {
-    font-size: calc( 2vw + 8px);
+    font-size       : calc(2vw + 8px);
 }
 
 @mixin standard-transitions() {
+    transition-timing-function: ease-in-out;
     transition-duration: 225ms;
     transition-delay: 0;
-    transition-timing-function: ease-in-out;
 }
 
 @mixin logo-styling() {
-    font-size: calc(5vmin + 20px);
-    color: $wht;
+    font-weight     : 700;
+    font-size       : calc(5vmin + 20px);
+    color           : $wht;
 }

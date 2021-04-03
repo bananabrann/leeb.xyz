@@ -2,29 +2,40 @@
 @import "../../styles/mixins";
 
 $tilt-degree: 2deg;
+$body-block-height: 225px;
 
 .Freelance {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .content {
-        width: 80vw;
-        max-width: 800px;
+    .service-item {
+        width: 100vw;
 
-        p {
-            @include standard-dynamic-text-sizing();
+        .body {
+            @include flex();
+            transform: rotate($tilt-degree);
+            overflow: hidden;
+
+            > * {
+                transform: rotate(-$tilt-degree);
+            }
+        }
+
+        .title {
+            @include standard-dynamic-text-heading-sizing();
+            transform: rotate($tilt-degree);
+            text-transform: uppercase;
+            margin: auto auto 0px 15px;
+            font-weight: 700;
         }
     }
 
-    .wide-content {
-        width: 90vw;
-        max-width: 1045px;
+    .list p {
+        padding: 0;
+        margin: 4px;
     }
 
-    .services {
-    }
-    
     .faq-banner {
         @include flex(row);
         @include standard-dynamic-text-heading-sizing();
@@ -39,5 +50,13 @@ $tilt-degree: 2deg;
         * {
             transform: rotate(-$tilt-degree);
         }
+    }
+
+    #webdev-effect-block {
+        background-color: $red;
+        position: relative;
+        width: 100vw;
+        height: $body-block-height + 200px;
+        transform: rotate(90deg);
     }
 }
