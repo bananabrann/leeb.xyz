@@ -1,11 +1,17 @@
 import React from "react";
 import "./Separator.scss";
 
-const Separator: React.FC<any> = () => {
+interface ISeparatorProps {
+    isLineHidden?: boolean;
+}
+
+const Separator: React.FC<any> = (props: ISeparatorProps) => {
+    const isLineVisible: boolean = props.isLineHidden ? false : true;
+
     return (
         <div className="Separator">
             <br />
-            <div />
+            {isLineVisible ? <div /> : <br />}
             <br />
         </div>
     );

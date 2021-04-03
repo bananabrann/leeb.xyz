@@ -29,8 +29,11 @@ p {
 .page {
     position: relative;
     min-height: 100vh;
+    width: 100vw;
 }
 
 .content-wrap {
-    padding-bottom: $footer-height;
-}
+    padding-bottom      : $footer-height;
+    max-width           : 975px;
+    width               : 90vw;
+}   
