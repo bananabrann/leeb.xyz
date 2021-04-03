@@ -37,3 +37,33 @@ p {
     max-width           : 975px;
     width               : 90vw;
 }   
+
+/*
+    SECTION - Hovers
+*/
+.hover-cyan {
+    @include standard-transitions();
+
+    &:hover {
+        @include standard-transitions();
+        color: $cyn;
+    }
+}
+
+.hover-yellow {
+    @include standard-transitions();
+
+    &:hover {
+        @include standard-transitions();
+        color: $ylw;
+    }
+}
+
+.hover-purple {
+    @include standard-transitions();
+
+    &:hover {
+        @include standard-transitions();
+        color: $prl;
+    }
+}

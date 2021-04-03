@@ -1,18 +1,36 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
 .Home {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
 
     .my-name {
         color: $prl;
         font-weight: 700;
     }
 
-    .content {
-        display: flex;
-        flex-direction: column;
+    .content-wrap {
+        @include flex(column, center, center);
+        width: 100vw;
+        margin: 0 auto;
+     
+   height: 50vh;
     }
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .home-selection-item {
+        font-size: calc(2vw + 6px);
+
+        &:hover {
+            transform: translateX(4px);
+        }
+    }
+}
+
+#home-banana {
+    width: 10vw;
+    margin: 0 auto;
+
 }

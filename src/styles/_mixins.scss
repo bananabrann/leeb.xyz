@@ -4,8 +4,6 @@
 
 $footer-height: 168px;
 
-
-
 // SECTION - Mixins
 
 @mixin flex($direction: column, $justify: center, $align: center) {
@@ -16,10 +14,11 @@ $footer-height: 168px;
     align-items     : $align;
 }
 
-@mixin tilt($degree) {
+@mixin tilt($degree, $height) {
     transform       : rotate($degree);
-    position        : absolute;
+    position        : relative;
     overflow        : hidden;
+    height          : $height;
     width           : 130%;
     left            : -10%;
 
@@ -40,7 +39,7 @@ $footer-height: 168px;
 
 @mixin standard-transitions() {
     transition-timing-function: ease-in-out;
-    transition-duration: 225ms;
+    transition-duration: 150ms;
     transition-delay: 0;
 }
 

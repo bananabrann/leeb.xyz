@@ -3,8 +3,8 @@ import FaqItem from "./FaqItem/FaqItem";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import ServiceItem from "./ServiceItem/ServiceItem";
-import "./Freelance.scss";
 import Separator from "../Separator/Separator";
+import "./Freelance.scss";
 
 const Freelance: React.FC<any> = () => {
     enum Services {
@@ -31,6 +31,21 @@ const Freelance: React.FC<any> = () => {
             <Header />
 
             <div className="content-wrap">
+
+                <div className="overview-section">
+                    <div className="overview-item">
+                        <i className="fas fa-tachometer-alt"></i>
+                        <p>Fast</p>
+                    </div>
+                    <div className="overview-item">
+                    <i className="fas fa-lightbulb"></i>
+                    <p>Intuitive</p>
+                    </div>
+                </div>
+
+
+
+                {/* 
                 <div className="service-item">
                     <div className="title service-webdev">Web Development</div>
                     <div
@@ -39,16 +54,20 @@ const Freelance: React.FC<any> = () => {
                         onMouseEnter={() => setIsWebDevBlockVisible(true)}
                         onMouseLeave={() => setIsWebDevBlockVisible(false)}
                     >
+                        <div className="list">
+                            <p>Web Dev</p>
+                        </div>
                         <div
                             id="webdev-effect-block"
                             className="service-effect-block color-block"
                         />
                     </div>
                 </div>
+                */}
 
                 <Separator isLineHidden={true} />
 
-                <div className="">
+                <div className="faq-section">
                     <FaqItem
                         question="What technologies do you use?"
                         answer="I have experience in a lot of things ranging from React and TypeScript to Python and Java. However, I've learned through my experience that it doesn't really matter. What tech stack we choose is entirely dependent on your project and needs."

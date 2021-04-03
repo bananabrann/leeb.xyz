@@ -2,42 +2,27 @@
 @import "../../styles/mixins";
 
 $tilt-degree: 2deg;
-$body-block-height: 225px;
+$body-block-height: 300px;
 
 .Freelance {
     @include flex();
 
-    .service-item {
+    .services-section {
         width: 100vw;
 
-        .body {
-            @include tilt(2deg);
+        .service-container {
             @include flex();
+            @include tilt(2deg, 300px);
             background-color: $gry;
-            margin-bottom: 20px;
-
         }
 
-        .title {
-            @include standard-dynamic-text-heading-sizing();
-            transform: rotate($tilt-degree);
-            text-transform: uppercase;
-            font-weight: 700;
-            margin: auto auto 0px 15px;
+    }
+
+    .overview-section {
+        @include flex(row);
+
+        .overview-item {
+            @include flex();
         }
-    }
-
-    .list p {
-        padding: 0;
-        margin: 4px;
-    }
-
-
-    #webdev-effect-block {
-        background-color: $red;
-        position: relative;
-        width: 100vw;
-        height: $body-block-height + 200px;
-        transform: rotate(90deg);
     }
 }
