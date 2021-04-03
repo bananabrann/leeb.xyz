@@ -46,7 +46,6 @@ const Freelance: React.FC<any> = () => {
                     </div>
                 </div>
 
-
                 <Separator isLineHidden={true} />
 
                 <div className="">

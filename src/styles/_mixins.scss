@@ -16,6 +16,18 @@ $footer-height: 168px;
     align-items     : $align;
 }
 
+@mixin tilt($degree) {
+    transform       : rotate($degree);
+    position        : absolute;
+    overflow        : hidden;
+    width           : 130%;
+    left            : -10%;
+
+    > * {
+        transform: rotate(-$degree);
+    }
+}
+
 @mixin standard-dynamic-text-sizing($base: 16px) {
     font-size       : calc(16px + 0.175vw);
     padding         : 2px;

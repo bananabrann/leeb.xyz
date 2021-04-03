@@ -5,29 +5,25 @@ $tilt-degree: 2deg;
 $body-block-height: 225px;
 
 .Freelance {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex();
 
     .service-item {
         width: 100vw;
 
         .body {
+            @include tilt(2deg);
             @include flex();
-            transform: rotate($tilt-degree);
-            overflow: hidden;
+            background-color: $gry;
+            margin-bottom: 20px;
 
-            > * {
-                transform: rotate(-$tilt-degree);
-            }
         }
 
         .title {
             @include standard-dynamic-text-heading-sizing();
             transform: rotate($tilt-degree);
             text-transform: uppercase;
-            margin: auto auto 0px 15px;
             font-weight: 700;
+            margin: auto auto 0px 15px;
         }
     }
 
@@ -36,21 +32,6 @@ $body-block-height: 225px;
         margin: 4px;
     }
 
-    .faq-banner {
-        @include flex(row);
-        @include standard-dynamic-text-heading-sizing();
-        font-weight: 700;
-        background-color: $gry;
-        width: 100vw;
-        height: 90px;
-        margin: 50px auto 25px;
-
-        transform: rotate($tilt-degree);
-
-        * {
-            transform: rotate(-$tilt-degree);
-        }
-    }
 
     #webdev-effect-block {
         background-color: $red;
