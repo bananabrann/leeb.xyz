@@ -20,16 +20,15 @@ $tilt-degree: -3deg;
         left: -5%;
     }
 
-    
     .header-content {
         position: absolute;
         top: 0;
         padding: 8px;
-        
+
         display: flex;
         flex-direction: row;
         align-items: center;
-        
+
         > * {
             margin: auto 9px;
         }
@@ -44,12 +43,32 @@ $tilt-degree: -3deg;
                 margin: 4px auto;
                 font-size: 10px;
                 text-transform: uppercase;
-                letter-spacing: 4px;                
+                letter-spacing: 4px;
             }
         }
+    }
+
+    .sticky {
+        position: fixed;
+        padding-top: 28px !important;
+        top: 0;
     }
 
     .Logo {
         font-size: calc(3vmin + 14px);
     }
+}
+
+#nav-slider {
+    color: $blk;
+    // position: fixed;
+    // top: 0;
+    // margin: auto 24px;
+    padding: 0px 30px;
+
+    overflow: hidden;
+}
+
+.sticky + .content-wrap {
+    padding-top: 60px;
 }
