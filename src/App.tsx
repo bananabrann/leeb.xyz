@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import "./App.scss";
 
 function App() {
+    useEffect(() => {
+        console.log("Nothing's here, I promise.")
+    }, []);
+
     return (
         <div className="App">
             <Router>

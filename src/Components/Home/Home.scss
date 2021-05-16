@@ -1,24 +1,43 @@
 @import "../../styles/colors";
 
-.Home {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 600px;
+@function randomNumInRange($min, $max) {
+    $rand: random();
+    $randomNum: $min + floor($rand * (($max - $min) +1));
 
-    .my-name {
-        color: $prl;
-        font-weight: 700;
+    @return $randomNum;
+}
+
+.Home {
+    .hovered-over-x {
+        display: inline-block;
+        transform: translateY(-30px) rotate(30deg);
+        transition: all 320ms ease-out;
+    }
+
+    .hovered-over-y {
+        display: inline-block;
+        transform: translateY(12px) rotate(8deg);
+        transition: all 320ms ease-out;
+    }
+
+    .hovered-over-z {
+        display: inline-block;
+        transform: translateY(-42px) rotate(196deg);
+        transition: all 620ms ease-out;
     }
 
     .content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
 
-        // @media only screen and (max-width: 545px) {
-        //     flex-direction: column;
-        // }
+    }
+
+    .my-name {
+        color: $prl;
+        font-weight: 700;
     }
 
     a:hover {
