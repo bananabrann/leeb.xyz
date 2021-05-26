@@ -25,7 +25,9 @@ a {
 }
 
 p {
-    @include base-padding();
+    // @include base-padding();
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    // font-size:1.33em;
 }
 
 h1, h2, h3, h4, h5, h6 {
