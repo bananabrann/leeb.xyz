@@ -1,5 +1,7 @@
 @import "../../styles/colors";
 
+$transition-times: 750ms;
+
 .Login {
     display: flex;
     flex-direction: column;
@@ -25,4 +27,27 @@
         }
 
     }
+
+    .red {
+        color: $red;
+    }
+
+    .hide {
+        opacity: 0;
+        transition: all $transition-times ease-in;
+        transform: translateY(4.25vh);
+    }
+
+    .displayed {
+        transition: all $transition-times ease-in;
+        transform: translateY(0px);
+        opacity: 1 !important;
+    }
+}
+
+#pam-logo {
+    opacity: 0;
+    transition: all $transition-times ease-in;
+    text-align: center; 
+    max-height: 130px;
 }
