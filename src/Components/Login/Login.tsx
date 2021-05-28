@@ -14,7 +14,7 @@ const Login: React.FC<any> = (props: any) => {
 
             infoEle!.classList.remove("hide");
             infoEle!.classList.add("displayed");
-        }, 2000);
+        }, 1500);
     }, []);
 
     return (
@@ -26,8 +26,11 @@ const Login: React.FC<any> = (props: any) => {
 
             <div id="info-block" className="hide">
                 <div className="input-container">
-                    <input type="text" />
-                    <input type="password" />
+                    <input type="text" placeholder="User" />
+                    <input type="password" placeholder="Password" />
+                </div>
+                <div className="lower">
+                <i className="fas fa-arrow-right fa-2x red"></i>
                 </div>
             </div>
         </div>

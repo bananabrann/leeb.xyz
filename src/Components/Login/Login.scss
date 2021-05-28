@@ -1,6 +1,6 @@
 @import "../../styles/colors";
 
-$transition-times: 750ms;
+$transition-times: 620ms;
 
 .Login {
     display: flex;
@@ -18,14 +18,22 @@ $transition-times: 750ms;
             margin-bottom: 15px;
             color: $red;
         }
-    
+
         input {
             background-color: #333;
             padding: 6px;
             border: 1px solid $red;
             border-radius: 12px;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 1.15rem;
         }
-
+    }
+    .lower {
+        display: flex;
+        justify-content: flex-end;
+        .fas {
+            cursor: pointer;
+        }
     }
 
     .red {
@@ -48,6 +56,6 @@ $transition-times: 750ms;
 #pam-logo {
     opacity: 0;
     transition: all $transition-times ease-in;
-    text-align: center; 
+    text-align: center;
     max-height: 130px;
 }
