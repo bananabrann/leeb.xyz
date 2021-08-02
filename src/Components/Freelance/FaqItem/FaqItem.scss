@@ -2,25 +2,25 @@
 @import "../../../styles/colors";
 
 .FaqItem {
-    .question-container {
-        @include flex(column, center, flex-end);
-        @include standard-dynamic-text-heading-sizing();
-        font-weight: 700;
-        font-style: italic;
-    }
+  .question-container {
+    @include flex(column, center, flex-end);
+    @include standard-dynamic-text-heading-sizing();
+    font-weight: 700;
+    font-style: italic;
+  }
 
-    .answer-container {
-        @include standard-dynamic-text-sizing();
-    }
+  .answer-container {
+    @include standard-dynamic-text-sizing();
+  }
 
-    .readmore-container {
-        @include standard-dynamic-text-sizing();
+  .readmore-container {
+    @include standard-dynamic-text-sizing();
 
-        .readmore-title {
-            @include flex();
-            color: $red;
-            text-decoration: underline;
-            cursor: pointer;
-        }
+    .readmore-title {
+      @include flex();
+      color: $red;
+      text-decoration: underline;
+      cursor: pointer;
     }
+  }
 }

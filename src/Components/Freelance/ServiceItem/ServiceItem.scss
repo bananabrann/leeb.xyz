@@ -2,41 +2,41 @@
 @import "../../../styles/colors";
 
 .ServiceItem {
-    @include flex(row, flex-start);
-    flex-wrap: wrap;
-    border-radius: 10px;
-    width: 285px;
-    background-color: $gry;
-    padding: 12px;
-    margin: 7px 0;
+  @include flex(row, flex-start);
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 285px;
+  background-color: $gry;
+  padding: 12px;
+  margin: 7px 0;
+
+  p {
+    font-family: "Ubuntu", "sans serif";
+  }
+
+  i {
+    margin: 5px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .serviceitem-title {
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .serviceitem-body {
+      font-size: 0.7em;
+    }
 
     p {
-       font-family: "Ubuntu", "sans serif";
+      padding: 0;
+      margin: 0;
     }
-
-    i {
-        margin: 5px;
-    }
-
-    .right {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-
-        .serviceitem-title {
-            font-weight: 700;
-            margin: 0;
-        }
-
-        .serviceitem-body {
-            font-size: 0.7em;
-        }
-
-     p {
-            padding: 0;
-            margin: 0;
-        }
-    }
-    @include standard-dynamic-text-sizing();
+  }
+  @include standard-dynamic-text-sizing();
 }

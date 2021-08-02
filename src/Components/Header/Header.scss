@@ -37,11 +37,13 @@ $tilt-degree: -3deg;
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            max-width: 250px;
+            
             .subtitle {
                 font-family: "Ubuntu", "serif";
                 margin: 4px auto;
                 font-size: 10px;
+                text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 4px;
             }

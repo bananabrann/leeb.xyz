@@ -1,14 +1,14 @@
 @import "../../styles/colors";
 
 .Separator {
-    width: 100%;
-    margin: 14px auto;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  margin: 14px auto;
+  display: flex;
+  justify-content: center;
 
-    div {
-        background-color: $gry2;
-        height: 2px;
-        width: 75vw;
-    }
+  div {
+    background-color: $gry2;
+    height: 2px;
+    width: 75vw;
+  }
 }

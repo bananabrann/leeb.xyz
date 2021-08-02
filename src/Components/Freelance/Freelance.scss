@@ -5,24 +5,23 @@ $tilt-degree: 2deg;
 $body-block-height: 300px;
 
 .Freelance {
-    @include flex();
+  @include flex();
 
-    .services-section {
-        width: 100vw;
+  .services-section {
+    width: 100vw;
 
-        .service-container {
-            @include flex();
-            @include tilt(2deg, 300px);
-            background-color: $gry;
-        }
-
+    .service-container {
+      @include flex();
+      @include tilt(2deg, 300px);
+      background-color: $gry;
     }
+  }
 
-    .overview-section {
-        @include flex(row);
+  .overview-section {
+    @include flex(row);
 
-        .overview-item {
-            @include flex();
-        }
+    .overview-item {
+      @include flex();
     }
+  }
 }
