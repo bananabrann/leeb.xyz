@@ -2,17 +2,17 @@
 @import "../../../styles/mixins";
 
 .NavItem {
-    @include standard-transitions();
-    // font-family: "Lora", "serif";
-    text-transform: uppercase;
-    border: 1px solid $wht;
-    padding: 8px;
+  @include standard-transitions();
+  // font-family: "Lora", "serif";
+  text-transform: uppercase;
+  border: 1px solid $wht;
+  padding: 8px;
 
-    &:hover {
-        @include standard-transitions();
-        border-radius: 10px;
-        background-color: $wht;
-        color: $blk;
-        cursor: pointer;
-    }
+  &:hover {
+    @include standard-transitions();
+    border-radius: 10px;
+    background-color: $wht;
+    color: $blk;
+    cursor: pointer;
+  }
 }

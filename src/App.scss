@@ -2,68 +2,68 @@
 @import "./styles/mixins";
 
 body {
-    color: $blk;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    font-family: 'Ubuntu', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: $wht;
-    overflow-x: hidden;
+  color: $blk;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $wht;
+  overflow-x: hidden;
 }
 
 code {
-    font-family: 'Ubuntu Mono', monospace;
+  font-family: "Ubuntu Mono", monospace;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 p {
-    font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
 
 .page {
-    position: relative;
-    min-height: 100vh;
-    width: 100vw;
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .content-wrap {
-    padding-bottom      : $footer-height;
-    max-width           : 975px;
-    width               : 90vw;
-}   
+  padding-bottom: $footer-height;
+  max-width: 975px;
+  width: 90vw;
+}
 
 /*
     SECTION - Hovers
 */
 .hover-cyan {
-    @include standard-transitions();
+  @include standard-transitions();
 
-    &:hover {
-        @include standard-transitions();
-        color: $cyn;
-    }
+  &:hover {
+    @include standard-transitions();
+    color: $cyn;
+  }
 }
 
 .hover-yellow {
-    @include standard-transitions();
+  @include standard-transitions();
 
-    &:hover {
-        @include standard-transitions();
-        color: $ylw;
-    }
+  &:hover {
+    @include standard-transitions();
+    color: $ylw;
+  }
 }
 
 .hover-purple {
-    @include standard-transitions();
+  @include standard-transitions();
 
-    &:hover {
-        @include standard-transitions();
-        color: $prl;
-    }
+  &:hover {
+    @include standard-transitions();
+    color: $prl;
+  }
 }

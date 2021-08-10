@@ -7,43 +7,43 @@ import Login from "./Components/Login/Login";
 import "./App.scss";
 
 function App() {
-    return (
-        <div className="App">
-            <Router>
-                <Route
-                    exact
-                    path="/"
-                    render={() => {
-                        return <Home />;
-                    }}
-                />
+  return (
+    <div className="App">
+      <Router>
+        <Route
+          exact
+          path="/"
+          render={() => {
+            return <Home />;
+          }}
+        />
 
-                <Route
-                    exact
-                    path="/login"
-                    render={() => {
-                        return <Login />;
-                    }}
-                />
+        <Route
+          exact
+          path="/login"
+          render={() => {
+            return <Login />;
+          }}
+        />
 
-                <Route
-                    exact
-                    path="/freelance"
-                    render={() => {
-                        return <Freelance />;
-                    }}
-                />
+        <Route
+          exact
+          path="/freelance"
+          render={() => {
+            return <Freelance />;
+          }}
+        />
 
-                <Route
-                    exact
-                    path="/about"
-                    render={() => {
-                        return <About />;
-                    }}
-                />
-            </Router>
-        </div>
-    );
+        <Route
+          exact
+          path="/about"
+          render={() => {
+            return <About />;
+          }}
+        />
+      </Router>
+    </div>
+  );
 }
 
 export default App;

@@ -5,45 +5,40 @@ import NavItem from "./NavItem/NavItem";
 import "./Header.scss";
 
 const Header: React.FC<any> = () => {
-    useEffect(() => {
-        document.onscroll = () => handleNavStickyEffect();
-    }, []);
+  useEffect(() => {
+    document.onscroll = () => handleNavStickyEffect();
+  }, []);
 
-    function handleNavStickyEffect() {
-        const navbar: HTMLElement | null = document.getElementById("nav-slider"); //prettier-ignore
-        let sticky: number  = navbar ? navbar.offsetTop : NaN;
+  function handleNavStickyEffect() {
+    const navbar: HTMLElement | null = document.getElementById("nav-slider"); //prettier-ignore
+    let sticky: number = navbar ? navbar.offsetTop : NaN;
 
-        console.log(sticky);
-        
-        if (navbar) {
-            if (window.pageYOffset > sticky) {
-                navbar.classList.add("sticky");
-                console.log("Yes");
-                
-            } else {
-                navbar.classList.remove("sticky");
-                console.log("No");
-            }
-        }
-
+    if (navbar) {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky");
+        console.log("Yes");
+      } else {
+        navbar.classList.remove("sticky");
+        console.log("No");
+      }
     }
+  }
 
-    return (
-        <div className="Header">
-            <div className="header-content">
-                <div className="badge">
-                    <Logo />
-                    <p className="subtitle">Software Engineer</p>
-                </div>
+  return (
+    <div className="Header">
+      <div className="header-content">
+        <div className="badge">
+          <Logo />
+          <p className="subtitle">Web Development & Software Engineering</p>
+        </div>
 
-                {/* 
-                
-                <NavItem
-                destination="/about"
-                label="About Me"
-                isDisabled={false}
-                navItemIdentifier="navitem-about"
-                />
+        <NavItem
+          destination="/about"
+          label="About Me"
+          isDisabled={false}
+          navItemIdentifier="navitem-about"
+        />
+        {/* 
                 
                 <NavItem
                 destination="/freelance"
@@ -53,11 +48,11 @@ const Header: React.FC<any> = () => {
                 />
                 
             */}
-            </div>
+      </div>
 
-            <i className="fas fa-bars fa-3x" id="nav-slider"></i>
-        </div>
-    );
+      <i className="fas fa-bars fa-3x" id="nav-slider"></i>
+    </div>
+  );
 };
 
 export default Header;

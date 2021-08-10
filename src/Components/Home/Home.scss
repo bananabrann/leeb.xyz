@@ -2,35 +2,33 @@
 @import "../../styles/mixins";
 
 .Home {
+  .my-name {
+    color: $prl;
+    font-weight: 700;
+  }
 
-    .my-name {
-        color: $prl;
-        font-weight: 700;
-    }
+  .content-wrap {
+    @include flex(column, center, center);
+    width: 100vw;
+    margin: 0 auto;
 
-    .content-wrap {
-        @include flex(column, center, center);
-        width: 100vw;
-        margin: 0 auto;
-     
-   height: 50vh;
-    }
-    p {
-        padding: 0;
-        margin: 0;
-    }
+    height: 50vh;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
 
-    .home-selection-item {
-        font-size: calc(2vw + 6px);
+  .home-selection-item {
+    font-size: calc(2vw + 6px);
 
-        &:hover {
-            transform: translateX(4px);
-        }
+    &:hover {
+      transform: translateX(4px);
     }
+  }
 }
 
 #home-banana {
-    width: 10vw;
-    margin: 0 auto;
-
+  width: 10vw;
+  margin: 0 auto;
 }
