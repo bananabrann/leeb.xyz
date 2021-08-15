@@ -61,6 +61,23 @@ $tilt-degree: -3deg;
     }
 }
 
+.header-second-angle {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    &::before {
+        transform: rotate(9.75deg);
+        background-color: $blk;
+        position: relative;
+        content: " ";
+        display: block;
+        width: 110%;
+        height: 135px;
+        top: -10px;
+        right: -50vw;
+    }
+}
+
 #nav-slider {
     color: $blk;
     // position: fixed;

@@ -26,6 +26,7 @@ const Header: React.FC<any> = () => {
 
   return (
     <div className="Header">
+      <div className="header-second-angle"></div>
       <div className="header-content">
         <div className="badge">
           <Logo />
