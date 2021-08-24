@@ -58,14 +58,12 @@ $tilt-degree: -3deg;
   }
 
   .nav-area {
-    background-color: $blu;
     color: $wht;
     padding: 24px;
     font-size: 24px;
     .Separator {
       max-width: 480px;
     }
-
     .section {
       display: flex;
       flex-direction: row;
@@ -87,12 +85,13 @@ $tilt-degree: -3deg;
 }
 
 .header-second-angle {
+  z-index: -1;
   top: 0;
   position: absolute;
   width: 100%;
   &::before {
     transform: rotate(9.75deg);
-    background-color: $blk;
+    background-color: $red;
     position: relative;
     content: " ";
     display: block;
