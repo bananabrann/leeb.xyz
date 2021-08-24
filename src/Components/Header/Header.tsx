@@ -1,10 +1,15 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
-import NavItem from "./NavItem/NavItem";
+import Separator from "../Separator/Separator";
 import "./Header.scss";
 
-const Header: React.FC<any> = () => {
+// prettier-ignore
+interface IHeaderProps {
+}
+
+const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
   useEffect(() => {
     document.onscroll = () => handleNavStickyEffect();
   }, []);
@@ -26,31 +31,17 @@ const Header: React.FC<any> = () => {
 
   return (
     <div className="Header">
+      <div className="header-second-angle"></div>
       <div className="header-content">
         <div className="badge">
           <Logo />
           <p className="subtitle">Web Development & Software Engineering</p>
         </div>
 
-        <NavItem
-          destination="/about"
-          label="About Me"
-          isDisabled={false}
-          navItemIdentifier="navitem-about"
-        />
-        {/* 
-                
-                <NavItem
-                destination="/freelance"
-                label="Freelance Services"
-                isDisabled={false}
-                navItemIdentifier="navitem-freelance"
-                />
-                
-            */}
-      </div>
+        <div className="right-side-dock">
 
-      <i className="fas fa-bars fa-3x" id="nav-slider"></i>
+        </div>
+      </div>
     </div>
   );
 };

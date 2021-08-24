@@ -20,10 +20,23 @@ code {
 a {
   text-decoration: none;
   color: inherit;
+
+  &:hover {
+    text-decoration: dotted underline;
+  }
 }
 
 p {
   font-family: "Lora", serif;
+  padding: 4px 0;
+  margin: 0;
+}
+
+.disabled {
+  cursor: not-allowed;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .page {

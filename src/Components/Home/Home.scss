@@ -2,21 +2,14 @@
 @import "../../styles/mixins";
 
 .Home {
-  .my-name {
-    color: $prl;
-    font-weight: 700;
-  }
-
   .content-wrap {
-    @include flex(column, center, center);
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    // width: 100vw;
     margin: 0 auto;
-
+    padding: 12px;
     height: 50vh;
-  }
-  p {
-    padding: 0;
-    margin: 0;
   }
 
   .home-selection-item {
@@ -26,9 +19,4 @@
       transform: translateX(4px);
     }
   }
-}
-
-#home-banana {
-  width: 10vw;
-  margin: 0 auto;
 }

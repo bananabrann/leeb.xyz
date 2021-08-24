@@ -8,7 +8,7 @@ const Footer: React.FC<any> = () => {
         <div className="left">
           <p>Lee Brannan</p>
           <p className="email">plbrannan95@gmail.com</p>
-          <p>Washington, D.C.</p>
+          <p>Fairfax, VA</p>
 
           <div className="logo-row">
             <a

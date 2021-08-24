@@ -12,6 +12,26 @@ const Home: React.FC<any> = () => {
       <Header />
 
       <div className="content-wrap">
+        <p>
+          My name is Lee. I'm a web developer with a few years of
+          experience in enterprise-level software engineering and systems
+          development. I'm passionate about technology, and its application to
+          the people it effects.
+        </p>
+
+        <h2>Files</h2>
+        <Link to="./resume.pdf">Resume</Link>
+        <Link to="./msazuredevassociate.pdf">
+          Microsoft Certified Azure Developer Associate (AZ-204)
+        </Link>
+        <Link to="./itil4foundation.pdf">ITIL 4 Foundation in IT Service Management</Link>
+
+        <h2>Contact</h2>
+        <p>plbrannan95@gmail.com</p>
+
+        <h2>Misc.</h2>
+        <Link to="#" className="disabled">The Banana Hub</Link>
+
         <Separator />
       </div>
 
