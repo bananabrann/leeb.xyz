@@ -23,15 +23,15 @@ const Home: React.FC<any> = () => {
         <br />
 
         {/* prettier-ignore */}
-        <Link to="./resume.pdf" target="_">
+        <Link to="./res/resume.pdf" target="_">
           <i className="far fa-file" /> Resume
         </Link>
         {/* prettier-ignore */}
-        <Link to="./msazuredevassociate.pdf" target="_">
+        <Link to="./res/msazuredevassociate.pdf" target="_">
           <i className="far fa-file" /> Microsoft Certified Azure Developer Associate (AZ-204)
         </Link>
         {/* prettier-ignore */}
-        <Link to="./itil4foundation.pdf" target="_">
+        <Link to="./res/itil4foundation.pdf" target="_">
           <i className="far fa-file" /> ITIL 4 Foundation in IT Service Management
         </Link>
 
