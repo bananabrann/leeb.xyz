@@ -2,21 +2,31 @@
 @import "../../styles/mixins";
 
 .Home {
+  .Logo {
+    font-size: 60px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+
   .content-wrap {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    // width: 100vw;
     margin: 0 auto;
+    margin-top: 50px;
     padding: 12px;
-    height: 50vh;
   }
+  
+}
 
-  .home-selection-item {
-    font-size: calc(2vw + 6px);
-
-    &:hover {
-      transform: translateX(4px);
+.bottom {
+    & > p:first-child {
+      font-weight: 700;
+      padding-left: 0;
     }
-  }
+    p {
+      display: inline;
+      padding-left: 24px;
+      font-size: 14px;
+    }
 }
