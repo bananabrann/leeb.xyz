@@ -22,6 +22,7 @@
 .bottom {
     & > p:first-child {
       font-weight: 700;
+      padding-left: 0;
     }
     p {
       display: inline;

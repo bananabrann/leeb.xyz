@@ -40,18 +40,24 @@ const Home: React.FC<any> = () => {
         <div className="bottom row">
           <p>plbrannan95@gmail.com</p>
           <span className="social-media">
-            <Link to="https://www.github.com/bananabrann">
-              {/* <i className="fab fa-github fa-2x"></i> */}
+            <a
+              href="https://www.github.com/bananabrann"
+              target="_blank"
+            >
               <p>GitHub</p>
-            </Link>
-            <Link to="#">
-              {/* <i className="fab fa-linkedin-in fa-2x"></i> */}
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pbrann/"
+              target="_blank"
+            >
               <p>LinkedIn</p>
-            </Link>
-            <Link to="#">
-              {/* <i className="fab fa-stack-overflow fa-2x"></i> */}
+            </a>
+            <a
+              href="https://stackoverflow.com/users/story/11057120"
+              target="_blank"
+            >
               <p>Stack Overflow</p>
-            </Link>
+            </a>
           </span>
         </div>
       </div>
