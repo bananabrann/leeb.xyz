@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import About from "./Components/About/About";
 import Freelance from "./Components/Freelance/Freelance";
 import Home from "./Components/Home/Home";
@@ -9,39 +9,41 @@ import "./App.scss";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Route
-          exact
-          path="/"
-          render={() => {
-            return <Home />;
-          }}
-        />
+      <BrowserRouter>
+        <Switch>
+          <Route
+            exact
+            path="/login"
+            render={() => {
+              return <Login />;
+            }}
+          />
+          <Route
+            exact
+            path="/freelance"
+            render={() => {
+              return <Freelance />;
+            }}
+          />
+          <Route
+            exact
+            path="/about"
+            render={() => {
+              return <About />;
+            }}
+          />
+          <Route
+            exact
+            path="/"
+            render={() => {
+              return <Home />;
+            }}
+          />
+          {/* TODO -- 404 Page */}
+          
+        </Switch>
 
-        <Route
-          exact
-          path="/login"
-          render={() => {
-            return <Login />;
-          }}
-        />
-
-        <Route
-          exact
-          path="/freelance"
-          render={() => {
-            return <Freelance />;
-          }}
-        />
-
-        <Route
-          exact
-          path="/about"
-          render={() => {
-            return <About />;
-          }}
-        />
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }

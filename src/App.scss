@@ -1,15 +1,17 @@
 @import "./styles/colors";
 @import "./styles/mixins";
 
+$font-size: 20px;
+
 body {
   color: $blk;
+  background-color: $gry;
   margin: 0;
   display: flex;
   justify-content: center;
   font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $wht;
   overflow-x: hidden;
 }
 
@@ -18,18 +20,20 @@ code {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-
   &:hover {
     text-decoration: dotted underline;
   }
 }
 
-p {
-  font-family: "Lora", serif;
+p, a {
+  // font-family: "Ubuntu", sans-serif;
+  font-family: "Helvetica", sans-serif;
+  text-decoration: none;
+  color: inherit;
+
   padding: 4px 0;
   margin: 0;
+  font-size: $font-size;
 }
 
 .disabled {
@@ -37,6 +41,12 @@ p {
   &:hover {
     text-decoration: none;
   }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .page {
