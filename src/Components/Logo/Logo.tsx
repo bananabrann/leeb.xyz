@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./Logo.scss";
 
 const Logo: React.FC<any> = () => {
@@ -14,15 +13,12 @@ const Logo: React.FC<any> = () => {
   }, []);
 
   return (
-    <Link to="/">
-      <div className="Logo">
-        lee<span id="underscore">_</span>b.
-        <span className="x">x</span>
-        <span className="y">y</span>
-        <span className="z">z</span>
-      </div>
-
-    </Link>
+    <div className="Logo">
+      lee<span id="underscore">_</span>b.
+      <span className="x">x</span>
+      <span className="y">y</span>
+      <span className="z">z</span>
+    </div>
   );
 };
 

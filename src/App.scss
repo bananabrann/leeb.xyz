@@ -4,8 +4,8 @@
 $font-size: 20px;
 
 body {
-  color: $blk;
-  background-color: $gry;
+  color: $gry;
+  background-color: $blk;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -25,12 +25,12 @@ a {
   }
 }
 
-p, a {
+p,
+a {
   // font-family: "Ubuntu", sans-serif;
   font-family: "Helvetica", sans-serif;
   text-decoration: none;
   color: inherit;
-
   padding: 4px 0;
   margin: 0;
   font-size: $font-size;
@@ -47,12 +47,6 @@ p, a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.page {
-  position: relative;
-  min-height: 100vh;
-  width: 100vw;
 }
 
 .content-wrap {

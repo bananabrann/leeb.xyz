@@ -31,16 +31,10 @@ const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
 
   return (
     <div className="Header">
-      <div className="header-second-angle"></div>
       <div className="header-content">
-        <div className="badge">
-          <Logo />
-          <p className="subtitle">Web Development & Software Engineering</p>
-        </div>
-
-        <div className="right-side-dock">
-
-        </div>
+        <Link to="/">
+          <i className="fas fa-home fa-2x"></i>
+        </Link>
       </div>
     </div>
   );

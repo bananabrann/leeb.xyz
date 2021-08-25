@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import FaqItem from "./FaqItem/FaqItem";
-import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import ServiceItem from "./ServiceItem/ServiceItem";
 import Separator from "../Separator/Separator";
@@ -85,8 +84,6 @@ const Freelance: React.FC<any> = () => {
           />
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

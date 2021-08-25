@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import Logo from "../Logo/Logo";
 import Separator from "../Separator/Separator";
 import "./Home.scss";
 
@@ -11,6 +11,8 @@ const Home: React.FC<any> = () => {
       <Header />
 
       <div className="content-wrap">
+        <Logo />
+
         <p>
           I'm a web developer with a few years of experience in software
           engineering and systems development, primarily in the United States'
@@ -21,15 +23,15 @@ const Home: React.FC<any> = () => {
         <br />
 
         {/* prettier-ignore */}
-        <Link to="./resume.pdf">
+        <Link to="./resume.pdf" target="_">
           <i className="far fa-file" /> Resume
         </Link>
         {/* prettier-ignore */}
-        <Link to="./msazuredevassociate.pdf">
+        <Link to="./msazuredevassociate.pdf" target="_">
           <i className="far fa-file" /> Microsoft Certified Azure Developer Associate (AZ-204)
         </Link>
         {/* prettier-ignore */}
-        <Link to="./itil4foundation.pdf">
+        <Link to="./itil4foundation.pdf" target="_">
           <i className="far fa-file" /> ITIL 4 Foundation in IT Service Management
         </Link>
 
@@ -53,8 +55,6 @@ const Home: React.FC<any> = () => {
           </span>
         </div>
       </div>
-
-      {/* <Footer /> */}
     </div>
   );
 };

@@ -2,12 +2,18 @@
 @import "../../styles/mixins";
 
 .Home {
-  align-items: center;
+  .Logo {
+    font-size: 60px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+
   .content-wrap {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 0 auto;
+    margin-top: 50px;
     padding: 12px;
   }
   

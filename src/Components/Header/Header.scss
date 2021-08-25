@@ -1,103 +1,59 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
-$tilt-degree: -3deg;
+$tilt-degree: -45deg;
 
 .Header {
-  width: 100%;
-  color: $wht;
-
-  .hamburger {
-    cursor: pointer;
-  }
-
   &::before {
+    $size: 200px;
+
     transform: rotate($tilt-degree);
-    background-color: $blk;
-    position: relative;
+    background-color: $wht;
+    position: absolute;
     content: " ";
-    display: block;
-    width: 110%;
-    height: 135px;
-    top: -50px;
-    left: -5%;
+    width: $size;
+    height: $size;
+    top: $size / -2;
+    left: $size / -2;
   }
 
   .header-content {
     position: absolute;
     top: 0;
-    padding: 8px;
-    color: $wht;
-
+    left: 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 94.5vw;
-
-    > * {
-      margin: auto 9px;
-    }
-
-    .badge {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 250px;
-
-      .subtitle {
-        font-family: "Ubuntu", "serif";
-        font-size: 10px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-      }
-    }
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    color: $blk;
+    padding: 8px;
   }
 
-  .nav-area {
-    color: $wht;
-    padding: 24px;
-    font-size: 24px;
-    .Separator {
-      max-width: 480px;
-    }
-    .section {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 600px;
-      text-align: right;
-    }
-  }
+
   .sticky {
     position: fixed;
     padding-top: 28px !important;
     top: 0;
   }
-  .Logo {
-    font-size: calc(3vmin + 14px);
-  }
 }
 
-.header-second-angle {
-  z-index: -1;
-  top: 0;
-  position: absolute;
-  width: 100%;
-  &::before {
-    transform: rotate(9.75deg);
-    background-color: $red;
-    position: relative;
-    content: " ";
-    display: block;
-    width: 110%;
-    height: 135px;
-    top: -10px;
-    right: -50vw;
-  }
-}
+// .header-second-angle {
+//   // z-index: -1;
+//   top: 0;
+//   position: absolute;
+//   width: 150%;
+//   &::before {
+//     transform: rotate(18.75deg);
+//     background-color: $red;
+//     position: relative;
+//     content: " ";
+//     display: block;
+//     width: 110%;
+//     height: 135px;
+//     top: -10px;
+//     right: -30vw;
+//   }
+// }
 
 .sticky + .content-wrap {
   padding-top: 60px;
