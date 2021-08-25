@@ -16,17 +16,31 @@
     margin-top: 50px;
     padding: 12px;
   }
-  
 }
 
 .bottom {
-    & > p:first-child {
-      font-weight: 700;
-      padding-left: 0;
+  $breakpoint: 480px;
+
+  & > p:first-child {
+    font-weight: 700;
+    padding-left: 0;
+  }
+  p {
+    display: inline;
+    font-size: 14px;
+  }
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 250px;
+    @media screen and (max-width: $breakpoint) {
+      width: 100%;
     }
-    p {
-      display: inline;
-      padding-left: 24px;
-      font-size: 14px;
-    }
+  }
+
+  @media screen and (max-width: $breakpoint) {
+    flex-direction: column !important;
+    align-items: center;
+  }
 }
